@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/main.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <title>To Do List</title>
+</head>
+<body>
+  <div class="container">
+  <header id="header">
+    <img src="images/cat-pot.png" alt="Pinkats" width="80px" height="80px">
+    <p>To Do List</p>
+  </header>
+    <aside id="sidebar">
+      <ul>
+        <li><img src="images/postal.png" alt=""><h4>Inbox</h4></li>
+        <li><img src="images/today.png" alt=""><h4>Today</h4></li>
+        <li>
+          <div class="projects">
+            <h1>Projects</h1>
+            <ul>
+              <li>+ Add Project</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </aside>
+    <section class="list-interface">
+      <div class="todo">
+        <div class="priority"></div>
+        <input type="checkbox" class="check">   
+          <div class="task-description-container">
+            <h4 class="task-header">codewars</h4>
+            <div class="task-description"></div>
+          </div>
+          <input type="date" class="due-date">
+          <button class="task-delete">X</button>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
