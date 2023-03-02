@@ -4,17 +4,23 @@ function createProject(){
     const addBtn = document.querySelector(".add-btn");
     let projects = [];
 
+    function getProjects(){
+      return projects;
+    }
+
     function createProject(name){
       return {
+        id,
         name : name,
         tasks: [],
       }
     }
 
     addBtn.addEventListener("click", () => {let projectName = storeProjectName();
-                                            let project= createProject(projectName);
-                                            console.log(project)});
+                                            let project= createProject(projectName)
+                                            projects.push(project);
+                                            console.log(projects)});
 
 }
 
-export {createProject};
+export {createProject, getProjects};
